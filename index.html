@@ -340,7 +340,7 @@ tbody tr:hover{background:#f7fbff}
           </div>
         </div>
       </form>
-    </div></div>
+    </div>
     <div class="modal-footer">
       <button class="btn-secondary" onclick="closeModal()">Vazgeç</button>
       <button class="btn-primary" onclick="saveRecord()">Kaydet</button>
@@ -381,7 +381,6 @@ function todayTR(){
 }
 
 function init(){
-  document.getElementById('date').value = todayTR();
 
   const configured = Object.values(firebaseConfig).every(v => v && !String(v).includes("BURAYA"));
   if(configured){
